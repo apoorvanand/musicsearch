@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "apoorv",
@@ -14,7 +16,8 @@
     "good": "^7.3.0",
     "good-console": "^6.4.0",
     "hapi": "^16.6.2",
-    "musicmatch": "^0.3.2"
+    "musicmatch": "^0.3.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {},
   "repository": {
@@ -24,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/apoorvanand/mock-server/issues"
   },
-  "homepage": "https://github.com/apoorvanand/mock-server#readme"
+  "homepage": "https://github.com/apoorvanand/mock-server#readme",
+  "snyk": true
 }
